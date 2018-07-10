@@ -4,7 +4,6 @@ import colors from "../../constants/colors";
 export const Wrapper = styled.div`
   background-color: ${colors.black};
   color: ${colors.white};
-  width: 100%;
   height: 50px;
   line-height: 50px;
   padding-left: 8px;
@@ -13,5 +12,6 @@ export const Wrapper = styled.div`
     text-transform: uppercase;
     font-weight: 300;
     text-align: center;
+    margin: 0px;
   }
 `;

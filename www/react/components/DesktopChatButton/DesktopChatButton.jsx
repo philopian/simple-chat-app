@@ -7,17 +7,19 @@ class DesktopChatButton extends Component {
 
   render() {
     return (
-      <Wrapper>
-        <p>
+      <Wrapper onclick={() => this.props.handleClick}>
+        <div>
           Chat with someone?{" "}
           <div className="message-icon">
             <i className="fa fa-commenting" aria-hidden="true" />
           </div>
-        </p>
+        </div>
       </Wrapper>
     );
   }
 }
-DesktopChatButton.propTypes = {};
+DesktopChatButton.propTypes = {
+  handleClick: PropTypes.func
+};
 DesktopChatButton.defaultProps = {};
 export default DesktopChatButton;

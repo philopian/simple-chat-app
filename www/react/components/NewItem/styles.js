@@ -2,12 +2,14 @@ import styled from "styled-components";
 import colors from "../../constants/colors";
 
 export const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+
   .input-section {
     input {
       height: 30px;
       margin: 0px;
-      max-width: 200px;
-      width: 100%;
+      width: 200px;
     }
     button {
       background-color: ${colors.black};
@@ -16,7 +18,8 @@ export const Wrapper = styled.div`
       height: 38px;
     }
   }
-  p {
+  .label-message {
+    display: block;
     font-size: 20px;
     color: ${colors.black};
     font-weight: 300;

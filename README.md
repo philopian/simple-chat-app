@@ -10,8 +10,13 @@
 
 ## Run the Development version
 
+- Install the dependencies
+  ```
+    $ npm install
+  or
+    $ yarn
+  ```
 - Get started developing
-
   ```
     $ npm start -s
   or

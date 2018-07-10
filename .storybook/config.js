@@ -5,6 +5,7 @@ function loadStories() {
   require("font-awesome/css/font-awesome.min.css");
   require('../www/sass/global.scss');
   require("../www/react/components/DesktopChatButton/storybook");
+  require("../www/react/components/Header/storybook");
 } // DONT'T DELETE THIS
 
 configure(loadStories, module);

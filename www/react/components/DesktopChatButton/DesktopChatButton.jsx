@@ -7,16 +7,14 @@ class DesktopChatButton extends Component {
 
   render() {
     return (
-      <div className="my-component">
-        <Wrapper>
-          <p>
-            Chat with someone?{" "}
-            <div className="message-icon">
-              <i className="fa fa-commenting" aria-hidden="true" />
-            </div>
-          </p>
-        </Wrapper>
-      </div>
+      <Wrapper>
+        <p>
+          Chat with someone?{" "}
+          <div className="message-icon">
+            <i className="fa fa-commenting" aria-hidden="true" />
+          </div>
+        </p>
+      </Wrapper>
     );
   }
 }

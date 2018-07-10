@@ -2,23 +2,19 @@
 
 exports[`DesktopChatButton (Snapshot) DesktopChatButton renders without crashing 1`] = `
 <div
-  className="my-component"
+  className="sc-bdVaJa hbqgvg"
 >
-  <div
-    className="sc-bdVaJa hbqgvg"
-  >
-    <p>
-      Chat with someone?
-       
-      <div
-        className="message-icon"
-      >
-        <i
-          aria-hidden="true"
-          className="fa fa-commenting"
-        />
-      </div>
-    </p>
-  </div>
+  <p>
+    Chat with someone?
+     
+    <div
+      className="message-icon"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-commenting"
+      />
+    </div>
+  </p>
 </div>
 `;

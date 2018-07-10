@@ -7,15 +7,15 @@ import Component from "./index.js";
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe("CreateUser (Snapshot)", () => {
-  it("CreateUser renders without crashing", () => {
+describe("NewItem (Snapshot)", () => {
+  it("NewItem renders without crashing", () => {
     const component = renderer.create(<Component />);
     const json = component.toJSON();
     expect(json).toMatchSnapshot();
   });
 });
 
-describe("CreateUser Component - ", () => {
+describe("NewItem Component - ", () => {
   it("Property method gets called", () => {
     const spy = jest.fn();
     // Render the component
@@ -59,5 +59,10 @@ describe("CreateUser Component - ", () => {
     // Simulate click
     component.find(".create-user-button").simulate("click");
     expect(INPUT_VALUE).toEqual(RESULT);
+  });
+
+  it("if prop newMessage == false, the button show be called 'create'", () => {
+    const component = shallow(<Component newMessage={false} />);
+    expect(component.find(".create-user-button").text()).toEqual("Create");
   });
 });

@@ -13,15 +13,30 @@ setConsoleOptions({
 
 const Info = {
   componentSection: "Components",
-  title: "CreateUser",
+  title: "NewItem",
   about:
     "allow the user to create a username, if the field is empty make a random name",
-  props: {
+  newUserProps: {
+    newMessage: false,
     message: "message passed",
-    handleClick: action("[CreateUser] - handleClick")
+    handleClick: action("[NewItem] - handleClick")
+  },
+  newMessageProps: {
+    newMessage: true,
+    message: "message passed",
+    handleClick: action("[NewItem] - handleClick")
   }
 };
 
 storiesOf(Info.componentSection, module)
   .addDecorator(withKnobs)
-  .add(Info.title, withInfo(Info.about)(() => <Component {...Info.props} />));
+  .add(
+    Info.title,
+    withInfo(Info.about)(() => (
+      <div>
+        <Component {...Info.newUserProps} />
+        <div style={{ height: "20px" }} />
+        <Component {...Info.newMessageProps} />
+      </div>
+    ))
+  );

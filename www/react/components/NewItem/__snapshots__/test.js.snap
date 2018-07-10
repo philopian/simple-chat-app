@@ -1,12 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CreateUser (Snapshot) CreateUser renders without crashing 1`] = `
+exports[`NewItem (Snapshot) NewItem renders without crashing 1`] = `
 <div
   className="sc-bdVaJa jnCzsN"
 >
-  <p>
-    Give yourself a username
-  </p>
   <div
     className="input-section"
   >
@@ -20,7 +17,7 @@ exports[`CreateUser (Snapshot) CreateUser renders without crashing 1`] = `
       className="create-user-button"
       onClick={[Function]}
     >
-      Create
+      Send
     </button>
   </div>
 </div>

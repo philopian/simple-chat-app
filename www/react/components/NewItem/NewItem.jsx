@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Wrapper } from "./styles.js";
 
-class CreateUser extends Component {
+class NewItem extends Component {
   state = {
     input: ""
   };
@@ -12,9 +12,14 @@ class CreateUser extends Component {
   };
 
   render() {
+    const Label = () =>
+      this.props.newMessage ? null : (
+        <p className="label-message">Give yourself a username</p>
+      );
+
     return (
       <Wrapper>
-        <p>Give yourself a username</p>
+        <Label />
         <div className="input-section">
           <input
             type="text"
@@ -26,17 +31,18 @@ class CreateUser extends Component {
             className="create-user-button"
             onClick={() => this.props.handleClick(this.state.input)}
           >
-            Create
+            {this.props.newMessage ? "Send" : "Create"}
           </button>
         </div>
       </Wrapper>
     );
   }
 }
-CreateUser.propTypes = {
-  handleClick: PropTypes.func
+NewItem.propTypes = {
+  handleClick: PropTypes.func,
+  newMessage: PropTypes.bool
 };
-CreateUser.defaultProps = {
-  // message: "World"
+NewItem.defaultProps = {
+  newMessage: true
 };
-export default CreateUser;
+export default NewItem;

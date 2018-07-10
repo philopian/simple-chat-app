@@ -2,8 +2,9 @@
 
 exports[`NewItem (Snapshot) NewItem renders without crashing 1`] = `
 <div
-  className="sc-bdVaJa jnCzsN"
+  className="sc-bdVaJa jbpjOp"
 >
+  <br />
   <div
     className="input-section"
   >
@@ -12,6 +13,7 @@ exports[`NewItem (Snapshot) NewItem renders without crashing 1`] = `
       name="username"
       onChange={[Function]}
       type="text"
+      value=""
     />
     <button
       className="create-user-button"

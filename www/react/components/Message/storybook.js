@@ -13,15 +13,31 @@ setConsoleOptions({
 
 const Info = {
   componentSection: "Components",
-  title: "OthersMessage",
+  title: "Message",
   about: "this is a component for other people's messages",
-  props: {
+  userProps: {
+    usersMessage: true,
     username: "Some User",
-    message: "message passed",
+    message: "hello from me!",
+    timestamp: "10:50pm"
+  },
+  otherUserProps: {
+    usersMessage: false,
+    username: "Some User",
+    message: "this is a message passed from another user!",
     timestamp: "10:10pm"
   }
 };
 
 storiesOf(Info.componentSection, module)
   .addDecorator(withKnobs)
-  .add(Info.title, withInfo(Info.about)(() => <Component {...Info.props} />));
+  .add(
+    Info.title,
+    withInfo(Info.about)(() => (
+      <div>
+        <Component {...Info.otherUserProps} />
+        <div style={{ height: "20px" }} />
+        <Component {...Info.userProps} />
+      </div>
+    ))
+  );

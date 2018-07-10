@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OthersMessage (Snapshot) OthersMessage renders without crashing 1`] = `
+exports[`Message (Snapshot) Message renders without crashing 1`] = `
 <div
-  className="sc-bdVaJa gAtwGl"
+  className="sc-bdVaJa cjHlDt"
 >
   <div
     className="arrow-left"
   />
   <div
-    className="content"
+    className="content padding-right"
   >
     <div
       className="username"

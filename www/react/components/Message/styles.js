@@ -7,14 +7,21 @@ export const Wrapper = styled.div`
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-
+    border-left: 10px solid ${colors.black};
+    float: right;
+    margin-top: 10px;
+  }
+  .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
     border-right: 10px solid ${colors.black};
     float: left;
     margin-top: 10px;
   }
   .content {
     padding: 8px;
-    margin-left: 10px;
     background-color: ${colors.white};
     border: solid 1px ${colors.black};
 
@@ -24,7 +31,7 @@ export const Wrapper = styled.div`
     }
     .message {
       font-weight: 300;
-      olor: ${colors.black};
+      color: ${colors.black};
     }
     .timestamp {
       color: ${colors.grey};
@@ -36,5 +43,15 @@ export const Wrapper = styled.div`
     .deal-with-float {
       clear: both;
     }
+  }
+
+  .padding-left {
+    margin-left: 10px;
+    margin-right: 40px;
+  }
+
+  .padding-right {
+    margin-left: 40px;
+    margin-right: 10px;
   }
 `;

@@ -20,7 +20,8 @@ const cmdPrompt = () => {
             input: val,
             titleCase:
               val.indexOf(" ") > -1
-                ? _.startCase(_.toLower(val))
+                ? _
+                    .startCase(_.toLower(val))
                     .split(" ")
                     .join("")
                 : _.startCase(val).replace(" ", ""),
@@ -240,11 +241,14 @@ const buildTest = (opts, paths) => {
   const filepath = path.join(paths.newComponentDir, "test.js");
   const fileName = "test.js";
   const fileContents = `import React from "react";
-import { configure, shallow, mount, render } from "enzyme";
+import Enzyme, { configure, shallow, mount, render } from "enzyme";
 import renderer from "react-test-renderer";
 import "raf/polyfill";
 import Adapter from "enzyme-adapter-react-16";
 import Component from "./index.js";
+
+Enzyme.configure({ adapter: new Adapter() });
+  
 
 describe("${opts.componentName.titleCase} (Snapshot)", () => {
   it("${opts.componentName.titleCase} renders without crashing", () => {

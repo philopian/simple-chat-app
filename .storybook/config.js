@@ -7,6 +7,7 @@ function loadStories() {
   require("../www/react/components/DesktopChatButton/storybook");
   require("../www/react/components/Header/storybook");
   require("../www/react/components/CreateUser/storybook");
+  require("../www/react/components/OthersMessage/storybook");
 } // DONT'T DELETE THIS
 
 configure(loadStories, module);

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OthersMessage (Snapshot) OthersMessage renders without crashing 1`] = `
+<div
+  className="sc-bdVaJa gAtwGl"
+>
+  <div
+    className="arrow-left"
+  />
+  <div
+    className="content"
+  >
+    <div
+      className="username"
+    >
+      
+    </div>
+    <div
+      className="message"
+    >
+      
+    </div>
+    <div
+      className="timestamp"
+    >
+      
+    </div>
+    <div
+      className="deal-with-float"
+    />
+  </div>
+</div>
+`;

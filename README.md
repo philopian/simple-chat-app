@@ -3,7 +3,7 @@
 ## Quick overview
 
 - Very simple chat messaging application
-- I've wired up websockets so you can open another window on [development mode](http://localhost:8080/) or [production mode](http://localhost:1234/) and view the new messages in real time
+- I've wired up websockets so you can open another window on [development mode](http://localhost:8080/) or [production mode](http://localhost:1234/) and view the new messages from other user's in real time
 - The list of "current users" is just a mock json object
 - There are a few test with Jest
 - I also developed the component in isolation with storybook

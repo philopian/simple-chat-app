@@ -20,7 +20,7 @@ class Container extends Component {
         usersMessage: false,
         username: "Some User",
         message:
-          "open up another browser at http://localhost:8080/ to add a message from another user",
+          "open up another browser at (DEV version: -> http://localhost:8080/) (PROD version-> http://localhost:1234/) to add a message from another user",
         timestamp: "10:10pm"
       }
     ]

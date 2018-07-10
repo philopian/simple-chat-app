@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DesktopChatButton (Snapshot) DesktopChatButton renders without crashing 1`] = `
+<div
+  className="my-component"
+>
+  <div
+    className="sc-bdVaJa hbqgvg"
+  >
+    <p>
+      Chat with someone?
+       
+      <div
+        className="message-icon"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-commenting"
+        />
+      </div>
+    </p>
+  </div>
+</div>
+`;

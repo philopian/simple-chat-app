@@ -19,6 +19,10 @@ export const Wrapper = styled.div`
     margin-top: 16px;
     cursor: pointer;
   }
+  .user-list-window {
+    float: left;
+    background-color: red;
+  }
   .current-user {
     float: right;
     margin-top: 16px;

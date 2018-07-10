@@ -2,17 +2,32 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Wrapper } from "./styles.js";
 
+const INITIAL_USERS = [
+  { key: 1, name: "Mock user 1" },
+  { key: 2, name: "Mock user 2" },
+  { key: 3, name: "Mock user 3" }
+];
 class UserList extends Component {
-  state = {}
-  
+  state = {
+    users: []
+  };
+
+  componentWillMount = () => {
+    this.setState({ users: INITIAL_USERS });
+  };
+
   render() {
+    const userList = this.state.users.map(item => (
+      <li key={item.key}>{item.name}</li>
+    ));
+
+    console.log("--state", this.state);
+
     return (
-      <div className="my-component">
-        <Wrapper>
-          <h1>user list</h1>
-          <p>{this.props.message}</p>
-        </Wrapper>
-      </div>
+      <Wrapper>
+        <h3>Current Users</h3>
+        <ul>{userList}</ul>
+      </Wrapper>
     );
   }
 }

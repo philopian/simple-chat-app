@@ -1,15 +1,22 @@
 import styled from "styled-components";
+import colors from "../../constants/colors";
 
-// Overriding styles
-export const Wrapper = styled.div `
-  color: rgb(37, 37, 37);
-  button {
-    color: #f15c5c;
-    background-color: #feee7d;
-    margin: 10px;
+export const Wrapper = styled.div`
+  color: ${colors.black};
+  border: solid 1px ${colors.black};
+  padding: 8px;
+  h3 {
+    margin: 0px;
+    padding-top: 8px;
+    padding-left: 8px;
   }
-  p {
-    font-size: 20px;
-    color: white;
+  ul {
+    margin-left: 0px;
+    padding-left: 20px;
+    margin-top: 8px;
+    list-style-type: none;
+    li {
+      color: ${colors.black};
+    }
   }
 `;

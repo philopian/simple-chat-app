@@ -34,8 +34,6 @@ storiesOf(Info.componentSection, module)
     Info.title,
     withInfo(Info.about)(() => (
       <div>
-        <Component {...Info.newUserProps} />
-        <div style={{ height: "20px" }} />
         <Component {...Info.newMessageProps} />
       </div>
     ))

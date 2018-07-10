@@ -69,7 +69,7 @@ class Container extends Component {
   };
 
   handleFooterClick = () => {
-    console.log("foooter click");
+    // console.log("foooter click");
     // const chatBox = document.getElementsByClassName("chat-box");
     // chatBox.classList.add("chat-box-open");
   };

@@ -34,7 +34,7 @@ class Header extends Component {
         >
           <ToolTip
             active={this.state.isTooltipActive}
-            position="top"
+            position={document.width > 600 ? "top" : "bottom"}
             arrow="center"
             parent="#text"
           >

@@ -21,8 +21,6 @@ class UserList extends Component {
       <li key={item.key}>{item.name}</li>
     ));
 
-    console.log("--state", this.state);
-
     return (
       <Wrapper>
         <h3>Current Users</h3>

@@ -1,16 +1,17 @@
-var http = require('http');
-var express = require('express');
-var app = express();
+const http = require('http');
+const express = require('express');
+const app = express();
+const chalk = require("chalk");
 
-var server = http.createServer(app);
-var io = require('socket.io').listen(server);
+const server = http.createServer(app);
+const io = require('socket.io').listen(server);
 
 // The server should start listening
 server.listen(1234);
 
 
 if (process.env.NODE_ENV === "production") {
-  console.log('....prod');
+  console.log(chalk.bgBlue.black("The magic happens at http://localhost:1234/"));
   
   // Register the index route of your app that returns the HTML file
   app.get('/', function (req, res) {
@@ -34,9 +35,8 @@ if (process.env.NODE_ENV === "production") {
 
 // Handle connection
 io.on('connection', function(socket){
-  console.log("Connected succesfully to the socket ...");
+  console.log("... Connected succesfully to the socket");
   socket.on('TO_SERVER', function(msg){
-    console.log("Message Sent: " + msg);
     io.emit('FROM_SERVER', msg);
   });
 });

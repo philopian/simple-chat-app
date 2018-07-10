@@ -1,9 +1,14 @@
-# StarterKit
+# Fake Chat App
 
-- Dev/Test/Build web application with live-reloading on file save
-- Scafold additional react/redux features
+## Quick overview
 
-## Start Developing
+- Very simple chat messaging application
+- I've wired up websockets so you can open another window on [development mode](http://localhost:8080/) or [production mode](http://localhost:1234/) and view the new messages in real time
+- The list of "current users" is just a mock json object
+- There are a few test with Jest
+- I also developed the component in isolation with storybook
+
+## Run the Development version
 
 - Get started developing
 
@@ -13,65 +18,19 @@
     $ yarn start
   ```
 
-## Develop components in isolation with Storybook
+## Build a "production" version of the application
 
-- Get started developing
-
-  ```
-    $ npm run storybook -s
-  or
-    $ yarn storybook
-  ```
-
-## Test with Jest
-
-- Test your components with Jest
-  ```text
-    $ npm test -s
-  or
-    $ yarn test
-  ```
-- Create code coverage
-
-  ```text
-    $ npm run coverage -s
-    or
-    $ yarn coverage
-  ```
-
-## Debug with VSCode + Chrome
-
-- Click the Debugger icon in the left panel > choose the "[Frontend debug] Launch Chrome" option
-
-## Build for deployment
-
-- Build your application for deployment
-  ```
+- Build the application first
+  ```bash
     $ npm run build -s
   or
     $ yarn build
   ```
+- This will build a ./Deploy/ folder for the minified version of the application
 
-## Simple CLI to add scafold new features
-
-- Quick way to scafold new react components/containers/reducers
-
-  ```
-    $ npm run new component
-    $ npm run new container
-    $ npm run new reducer
+- Run the "Production" version of the application
+  ```bash
+    $ npm run start:prod -s
   or
-    $ yarn new component
-    $ yarn new container
-    $ yarn new reducer
+    $ yarn start:prod
   ```
-
-# Additional info
-
-- Didn't want to bundle this up cause people might have their own preferences
-
-  ```text
-    $ npm i -g  eslint eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import
-  ```
-
-- If you are using VSCode there are some files that are hidden so that the folder structure looks a little cleaner, if you want to show all or some open up the .vscode/settings.json and take a look under the "files.exclude"

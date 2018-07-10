@@ -22,6 +22,7 @@ export const Wrapper = styled.div`
   }
   .content {
     padding: 8px;
+    margin-top: 10px;
     background-color: ${colors.white};
     border: solid 1px ${colors.black};
 

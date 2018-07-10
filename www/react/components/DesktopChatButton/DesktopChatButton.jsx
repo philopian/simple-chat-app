@@ -20,10 +20,6 @@ class DesktopChatButton extends Component {
     );
   }
 }
-DesktopChatButton.propTypes = {
-  message: PropTypes.string
-};
-DesktopChatButton.defaultProps = {
-  message: "World"
-};
+DesktopChatButton.propTypes = {};
+DesktopChatButton.defaultProps = {};
 export default DesktopChatButton;

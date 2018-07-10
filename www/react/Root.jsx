@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import Container from "./components/Container";
 class Root extends Component {
   render() {
-    return <div>Hello React</div>;
+    return <Container />;
   }
 }
 export default Root;

@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container (Snapshot) Container renders without crashing 1`] = `
+<div
+  className="sc-bdVaJa gtxfII"
+>
+  <div
+    className="sc-htpNat eHMIka"
+  >
+    <p>
+      Fake Chat app
+    </p>
+  </div>
+  <div
+    className="chat-box "
+    id="chat-box"
+  >
+    <div
+      className="sc-bxivhb gJPhtw"
+    >
+      <div
+        className="arrow-right"
+      />
+      <div
+        className="content padding-left"
+      >
+        <div
+          className="username"
+        >
+          Some User
+        </div>
+        <div
+          className="message"
+        >
+          ffffff
+        </div>
+        <div
+          className="timestamp"
+        >
+          10:10pm
+        </div>
+        <div
+          className="deal-with-float"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="footer"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-ifAKCX jimocm"
+    >
+      <div
+        className="input-section"
+      >
+        <input
+          className="username"
+          name="username"
+          onChange={[Function]}
+          type="text"
+        />
+        <button
+          className="create-user-button"
+          onClick={[Function]}
+        >
+          Send
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

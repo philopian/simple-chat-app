@@ -6,6 +6,7 @@ function loadStories() {
   require('../www/sass/global.scss');
   require("../www/react/components/DesktopChatButton/storybook");
   require("../www/react/components/Header/storybook");
+  require("../www/react/components/CreateUser/storybook");
 } // DONT'T DELETE THIS
 
 configure(loadStories, module);

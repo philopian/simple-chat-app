@@ -8,6 +8,7 @@ function loadStories() {
   require("../www/react/components/Header/storybook");
   require("../www/react/components/NewItem/storybook");
   require("../www/react/components/Message/storybook");
+  require("../www/react/components/UserList/storybook");
 } // DONT'T DELETE THIS
 
 configure(loadStories, module);

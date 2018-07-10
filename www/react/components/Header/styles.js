@@ -7,11 +7,21 @@ export const Wrapper = styled.div`
   height: 50px;
   line-height: 50px;
   padding-left: 8px;
-  padding-right: 4px;
+  padding-right: 8px;
   p {
     text-transform: uppercase;
     font-weight: 300;
     text-align: center;
     margin: 0px;
+  }
+  .user-list {
+    float: left;
+    margin-top: 16px;
+    cursor: pointer;
+  }
+  .current-user {
+    float: right;
+    margin-top: 16px;
+    cursor: pointer;
   }
 `;

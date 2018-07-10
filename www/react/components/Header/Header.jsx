@@ -8,6 +8,8 @@ class Header extends Component {
   render() {
     return (
       <Wrapper>
+        <i className="fa fa-users user-list" aria-hidden="true" />
+        <i className="fa fa-user current-user" aria-hidden="true" />
         <p>{this.props.title}</p>
       </Wrapper>
     );

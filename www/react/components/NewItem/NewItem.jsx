@@ -17,6 +17,12 @@ class NewItem extends Component {
     this.reset();
   };
 
+  handleKeyPress = event => {
+    if (event.key == "Enter") {
+      this.buttonClick();
+    }
+  };
+
   reset = () => {
     this.setState({ input: "" });
   };
@@ -38,6 +44,7 @@ class NewItem extends Component {
             className="username"
             value={this.state.input}
             onChange={this.handleChange}
+            onKeyPress={this.handleKeyPress}
           />
           <button className="create-user-button" onClick={this.buttonClick}>
             {this.props.newMessage ? "Send" : "Create"}
